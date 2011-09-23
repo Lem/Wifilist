@@ -1,0 +1,144 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Wifi List</title>
+<style type="text/css">
+body {
+	font: 100%/1.4 Verdana, Arial, Helvetica, sans-serif;
+	background: #42413C;
+	margin: 0;
+	padding: 0;
+	color: #000;
+}
+
+ul, ol, dl {
+	padding: 0;
+	margin: 0;
+}
+h1, h2, h3, h4, h5, h6, p {
+	margin-top: 0;
+	padding-right: 15px;
+	padding-left: 15px; }
+a img { 
+	border: none;
+}
+
+a:link {
+	color: #42413C;
+	text-decoration: underline;
+}
+a:visited {
+	color: #6E6C64;
+	text-decoration: underline;
+}
+a:hover, a:active, a:focus { 
+	text-decoration: none;
+}
+
+.container {
+	width: 1000px;
+	background: #FFF;
+	margin: 0 auto; 
+	overflow: hidden;
+}
+
+
+.sidebar1 {
+	float: left;
+	width: 140px;
+	background: #EADCAE;
+	padding-bottom: 10px;
+}
+.content {
+	padding: 10px 0;
+	width: 855px;
+	float: left;
+}
+
+.footer {
+	padding: 10px 0;
+	background: #EADCAE;
+	position: relative;
+	clear: both;
+	font-size: 65%;
+}
+
+.content ul, .content ol { 
+	padding: 0 15px 15px 40px; 
+}
+
+ul.nav {
+	list-style: none;
+	border-top: 1px solid #666;
+	 margin-bottom: 15px;
+}
+ul.nav li {
+	border-bottom: 1px solid #666;
+}
+ul.nav a, ul.nav a:visited {
+	padding: 5px 5px 5px 15px;
+	display: block;	
+	width: 120px;
+	text-decoration: none;
+	background: #C6D580;
+}
+ul.nav a:hover, ul.nav a:active, ul.nav a:focus {
+	background: #ADB96E;
+	color: #FFF;
+}
+
+.fltrt {
+	float: right;
+	margin-left: 8px;
+}
+.fltlft {
+	float: left;
+	margin-right: 8px;
+}
+.clearfloat {
+	clear:both;
+	height:0;
+	font-size: 1px;
+	line-height: 0px;
+}
+.offen {
+	color: #0C0;
+	font-weight: bold;
+}
+.wep {
+	color: #F90;
+	font-weight: bold;
+}
+.wpa {
+	color: #F00;
+	font-weight: bold;
+}
+-->
+</style>
+<script src="OpenLayers.js"></script>
+</head>
+
+<body>
+
+<div class="container">
+  <div class="sidebar1">
+    <ul class="nav">
+      <li><a href="index.pl?action=import">Import</a></li>
+      <li><a href="index.pl?action=list">Liste</a></li>
+      <li><a href="index.pl?action=search">Suchen</a></li>
+      <li><a href="index.pl?action=map">Karte</a></li>
+    </ul>
+    <p> <span class="offen">[% open %]</span>/<span class="wep">[% wep %]</span>/<span class="wpa">[% wpa %]</span><br />
+      [% total %]
+    </p>
+    </div>
+  <div class="content">
+    <p>[% content %]</p>
+  </div>
+  <div class="footer">
+    <p>Icons by 	Oliver Scholtz, Joseph North.<br>
+    </p>
+    </div>
+</div>
+</body>
+</html>

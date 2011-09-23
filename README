@@ -1,0 +1,25 @@
+Wifilist
+Privates Projekt von Thorben Went
+
+Benoetigt werden ein Webserver mit CGI-Unterstuetzung, sowie 
+die Perl-Module fuer DBI/SQLite3.0 und 'Template'.
+
+ Importiert Kismet-Logfiles (.netxml) in eine sqlite3.0-Datenbank.
+
+ Bei der Suche kann % wie bei jedem normalen Query benutzt werden.
+
+ Die Anzeige als Karte wird durch OpenLayers realisiert.
+
+ Zeigt auf Wunsch moegliche APs an, welche durch SpeedPwn verwundbar
+ sind.
+ http://www.wardriving-forum.de/forum/showthread.php?68609-Speedpwn-PoC-for-Telekom-Arcadayan-Router-Active-Bruteforce
+
+ Icons sind von Oliver Scholtz bzw. Joseph North.
+
+
+To Do:
+ Auflistung in Seiten, 50 Stueck/Seite.
+
+
+Troubleshooting:
+ Datenbank sollte schreibbar sein, genauso wie all.txt.
